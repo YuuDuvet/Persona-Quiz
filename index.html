@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persona Quiz</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-image: url(PersonaBackground.jpg); /* Replace with your background image */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #quiz-container {
+      margin: 20px auto;
+      width: 500px;
+      border: 1px solid black;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 5px 5px 5px black;
+    }
+    #question {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: red;
+    }
+    #options {
+      margin-bottom: 15px;
+    }
+    #options p {
+      margin-bottom: 5px;
+      cursor: pointer; /* Add cursor for clickable options */
+    }
+    #user-answer {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      opacity: 0;
+    }
+    button {
+      padding: 8px 15px;
+      background-color: red;
+      color: black;
+      border: none;
+      cursor: pointer;
+      opacity: 0;
+    }
+    #feedback {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    #timer {
+      font-weight: bold;
+      margin-top: 5px;
+      background-color: 5px 5px 5px white;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="quiz-container">
+    <h2 id="quiz-title">Persona Quiz</h2>
+    <p id="question"></p>
+    <div id="options"></div> 
+    <p id="feedback"></p>
+  </div>
+<input type="text" id="user-answer" placeholder="Enter your answer">
+    <button id="submit-button">Submit</button>
+  <script src='script.js'>
+  </script>
+
+</body>
+</html>
